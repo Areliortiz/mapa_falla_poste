@@ -1,0 +1,7 @@
+dash
+dash-leaflet
+pandas
+geopandas
+openpyxl
+pillow
+requests
