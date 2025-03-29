@@ -22,13 +22,15 @@ df = pd.read_excel(archivo_excel, sheet_name=1) # lee la hoja 1 de mi archivo (i
 
 
 # Cargar los polígonos
-gdf_colonias = gpd.read_file("E:/EDITH/julio/MAPA_FALLAS/assets/Poligonos/colonias.shp")
-gdf_sectores = gpd.read_file("E:/EDITH/julio/MAPA_FALLAS/assets/Poligonos/sectores.shp")
-gdf_alcaldias = gpd.read_file("E:/EDITH/julio/MAPA_FALLAS/assets/Poligonos/alcaldias.shp")
-gdf_C2 = gpd.read_file("E:/EDITH/julio/MAPA_FALLAS/assets/Poligonos/C2.shp")
+# gdf_colonias = gpd.read_file("E:/EDITH/julio/MAPA_FALLAS/assets/Poligonos/colonias.shp")
+# gdf_sectores = gpd.read_file("E:/EDITH/julio/MAPA_FALLAS/assets/Poligonos/sectores.shp")
+# gdf_alcaldias = gpd.read_file("E:/EDITH/julio/MAPA_FALLAS/assets/Poligonos/alcaldias.shp")
+# gdf_C2 = gpd.read_file("E:/EDITH/julio/MAPA_FALLAS/assets/Poligonos/C2.shp")
+gdf_colonias = gpd.read_file("Poligonos/colonias.shp")
+gdf_sectores = gpd.read_file("Poligonos/sectores.shp")
+gdf_alcaldias  = gpd.read_file("Poligonos/alcaldias.shp")
+gdf_C2 = gpd.read_file("Poligonos/C2.shp")
 
-print(gdf_colonias.columns)
-print(gdf_colonias.head())
 #print(gdf_alcaldias.head)
 #print(gdf_alcaldias[["id_distrit"]].head())  # Verificar si la columna tiene los nombres correctos
 #print(gdf_alcaldias.dtypes)  # Verificar el tipo de dato de cada columna
@@ -37,7 +39,7 @@ print(gdf_colonias.head())
 # ----------------------------- #
 # Cargar la imagen de la rosa de los vientos
 # ----------------------------- #
-ruta_rosa_vientos = "E:/EDITH/julio/Reporte_Sin conectividad 28_01/assets/puntos_cardinales_ajustado2.png"
+ruta_rosa_vientos = "puntos_cardinales_ajustado2.png"
 def encode_rosa_vientos(image_path):
     try:
         with open(image_path, "rb") as img_file:
