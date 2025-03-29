@@ -14,7 +14,9 @@ import geopandas as gpd
 # ----------------------------- #
 # Cargar datos desde el Excel
 # ----------------------------- #
-archivo_excel = "E:/EDITH/julio/Reporte_Sin conectividad 28_01/Base_sin_filtro/Reporte Cámaras Sin conectividad 28_01.xlsx"
+#archivo_excel = "E:/EDITH/julio/Reporte_Sin conectividad 28_01/Base_sin_filtro/Reporte Cámaras Sin conectividad 28_01.xlsx"
+archivo_excel = "datos_fallas.xlsx"
+
 ruta_imagenes = "E:/EDITH/julio/Reporte_Sin conectividad 28_01/Imagenes"
 df = pd.read_excel(archivo_excel, sheet_name=1) # lee la hoja 1 de mi archivo (inicia en 0)
 
