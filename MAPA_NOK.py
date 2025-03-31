@@ -29,7 +29,7 @@ df = pd.read_excel(archivo_excel, sheet_name=1) # lee la hoja 1 de mi archivo (i
 gdf_colonias = gpd.read_file("Poligonos/colonias.shp")
 gdf_sectores = gpd.read_file("Poligonos/sectores.shp")
 gdf_alcaldias  = gpd.read_file("Poligonos/alcaldias.shp")
-gdf_C2 = gpd.read_file("Poligonos/C2.shp")
+gdf_C2 = gpd.read_file("Poligonos/c2.shp")
 
 #print(gdf_alcaldias.head)
 #print(gdf_alcaldias[["id_distrit"]].head())  # Verificar si la columna tiene los nombres correctos
