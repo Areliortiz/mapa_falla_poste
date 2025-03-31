@@ -420,4 +420,6 @@ def actualizar_mapa(fallas_seleccionadas, poligonos_seleccionados):
 # Ejecutar la aplicación
 # ----------------------------- #
 if __name__ == '__main__':
-    app.run(debug=True)
+
+    port = int(os.environ.get("PORT", 8050))  # Render te asigna el puerto por variable de entorno
+    app.run(host="0.0.0.0", port=port, debug=True)
