@@ -420,4 +420,4 @@ def actualizar_mapa(fallas_seleccionadas, poligonos_seleccionados):
 # Ejecutar la aplicación
 # ----------------------------- #
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run(debug=True)
